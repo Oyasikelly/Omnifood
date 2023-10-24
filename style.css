@@ -1,0 +1,341 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#00000097, rgba(0, 0, 0, 0.6)),
+    url(/Omnifood-Contents/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  background-repeat: no-repeat;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+}
+nav .logo {
+  width: 80px;
+}
+nav .logo img {
+  width: 100%;
+  background-color: white;
+  border-radius: 50%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+nav ul a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 14px;
+}
+nav ul a::after {
+  content: "";
+  background-color: orange;
+  position: absolute;
+  width: 0%;
+  height: 10%;
+  transition: 0.5s ease-in-out;
+}
+nav ul a:hover {
+  opacity: 0.8;
+  transform: translateY(-3px);
+  transition: 0.5s ease-in-out;
+}
+nav ul a:hover::after {
+  width: 100%;
+}
+.header-content {
+  position: relative;
+  top: 8rem;
+  margin-left: 6rem;
+}
+.header-content p {
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+.header-content a {
+  padding: 0.7rem 2rem;
+  border: 1px solid orange;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: orange;
+  transition: 0.5s ease-out;
+}
+.header-content .btn-1 {
+  background-color: orange;
+  color: #fff;
+}
+.header-content a:hover {
+  background-color: rgba(255, 166, 0, 0.686);
+  color: #fff;
+}
+/* END of HEADER */
+
+/* Section One */
+.features {
+  background-color: #fff;
+  color: grey;
+  padding: 0 6rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.features h1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+  padding-bottom: 1.6rem;
+}
+.features h1 div {
+  padding-top: 1rem;
+  align-self: center;
+  width: 70px;
+  height: 3px;
+  border-bottom: 3px solid rgba(255, 166, 0, 0.686);
+}
+.features p {
+  max-width: 50%;
+}
+.features .Feature-contents {
+  display: flex;
+  margin-top: 1rem;
+}
+.features .Feature-contents .content i {
+  font-size: 2rem;
+  color: orange;
+}
+.features .Feature-contents h2 {
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+/* Section two */
+.Favorite-meals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.Favorite-meals img {
+  width: 100%;
+}
+/* Section three */
+.How-it-works {
+  padding: 2rem 6rem;
+  margin-bottom: 2rem;
+  height: 100vh;
+  background-color: #fff;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+}
+.How-it-works h1 {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.6rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.How-it-works h1 div {
+  position: relative;
+  right: 0.7rem;
+  padding-top: 1rem;
+  align-self: center;
+  width: 70px;
+  height: 3px;
+  border-bottom: 3px solid rgba(255, 166, 0, 0.686);
+}
+.How-it-works .inner-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+  /* position: relative; */
+  /* right: 6rem; */
+}
+
+.inner-content .iphone img {
+  width: 200px;
+  height: 400px;
+  /* flex-basis: 50%; */
+}
+
+.inner-content .steps {
+  /* position: relative; */
+  /* flex-basis: 40%; */
+  display: block;
+  align-items: center;
+  /* margin-top: 1rem; */
+}
+.inner-content .step {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 14px;
+}
+.inner-content .step .number {
+  margin-right: 1.5rem;
+  padding: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid orange;
+  color: orange;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-stores {
+  margin-top: 2rem;
+}
+.app-stores img {
+  width: 10rem;
+  height: 3rem;
+}
+
+/* Section four */
+.cities {
+  padding-bottom: 2rem;
+  color: gray;
+
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center; */
+}
+.cities h1 {
+  text-align: center;
+  /* align-self: center; */
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.6rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.cities h1 div {
+  position: relative;
+  right: 0.7rem;
+  padding-top: 1rem;
+  align-self: center;
+  width: 70px;
+  height: 3px;
+  border-bottom: 3px solid rgba(255, 166, 0, 0.686);
+}
+.cities .inner-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.cities .inner-content img {
+  width: 230px;
+}
+.cities .inner-content h2 {
+  font-size: 18px;
+  /* padding: 0.6rem; */
+}
+.cities .inner-content p {
+  font-size: 14px;
+  padding: 0.3rem;
+}
+
+.persons,
+.stars,
+.twitter {
+  display: flex;
+  align-items: center;
+}
+.cities .content i {
+  color: orange;
+}
+/* section five */
+.Customer-testimonials {
+  background-image: linear-gradient(#000000bb, #000000a0),
+    url(/Omnifood-Contents/2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: 100vh; */
+  color: #fff;
+  padding: 3rem 0 3rem 0;
+}
+
+.Customer-testimonials h1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.6rem;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 3rem 0 1rem 0;
+}
+.Customer-testimonials h1 div {
+  position: relative;
+  right: 0.7rem;
+  padding-top: 1rem;
+  align-self: center;
+  width: 70px;
+  height: 3px;
+  border-bottom: 3px solid rgba(255, 166, 0, 0.686);
+}
+.customer-testimonials-innerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.5rem;
+  /* flex-wrap: wrap; */
+}
+.Customer-testimonials .customer {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+.customer p {
+  max-width: 300px;
+  line-height: 1.5rem;
+  font-weight: 200;
+}
+.Customer-testimonials .customer .cust-profile {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  padding: 1rem 0;
+}
+.cust-profile img {
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid orange;
+}
+.cust-profile p {
+  margin-left: 0.3rem;
+}
+.customer i {
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+  right: 0.3rem;
+}
